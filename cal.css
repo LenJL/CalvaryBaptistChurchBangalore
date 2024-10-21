@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'times new roman', 'serif';
+    background-image: url('images/calvarybg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: brightness(40%);
+    min-height: 100vh;
+}
+
+.church-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px 20px;
+}
+
+.church-header h1 {
+    display: inline;
+    padding: 10px 20px;
+    background-color: #0c3b69;
+    text-shadow: 2px 2px #000;
+    font-size: 3rem;
+}
+
+.church-header .verse {
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.church-header .highlight {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar a {
+    background-color: rgb(12, 59, 105);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background: rgba(0, 64, 128, 0.8);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.ministries-section h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.meeting {
+    background-color: rgba(12, 59, 105, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.meeting h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.meeting p {
+    font-size: 1.2rem;
+}
+
+.meeting a {
+    color: white;
+    transition: transform 0.3 ease-in-out;
+}
+
+.meeting a:hover {
+    color: #000000;
+}
+
+.index-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.index-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.index-img img.active {
+    opacity: 1;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #000000;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 50, 0.8);
+    color: white;
+    padding: 20px 50px;
+    width: 100%;
+}
+
+.footer-image {
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-details h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+}
+
+.footer-details hr {
+    width: 40px;
+    border: 1px solid #ffffff;
+    margin: 10px auto;
+}
+
+.footer-details img {
+    margin: 5px 0;
+    align-self: center;
+}
+
+.footer-details address,
+.footer-details p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+.footer-details pre {
+    display: inline-block;
+    font-size: large;
+}
+
+.footer-details p a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-details p a:hover {
+    color: #ffcc00;
+}
+
+.believe {
+    background-color: rgba(12, 59, 105, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+ 
+}
+
+.pastor {
+    background-color: rgba(245, 245, 245, 0.8);
+    color: rgb(0, 0, 0);
+    font-family: 'Georgia', serif;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pastor h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.family-pic {
+    width: 550px;
+    height: 300px;
+    border: 3px solid white;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pastor p {
+    font-size: 20px;
+    margin: 25px;
+    line-height: 1.5;
+}
+
+.pastor a {
+    color: #0c3b69;
+    font-size: larger;
+}
+
+.pastor a:hover {
+    color: #000;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.ministry-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ministry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    background-color: rgba(165, 165, 165, 0.7);
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    color: #000000;
+    font-size: 20px;
+}
+
+.ministry h2 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: #070707;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    animation: fade 1s infinite;
+}
+
+.textpastor {
+    font-size: 30px;
+    color: #010101;
+}
+.textaddress{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.imgsize img.active {
+    opacity: 1;
+}
+
+.events {
+    background-color: rgba(12, 59, 105, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+    font-family: 'Times New Roman', serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.events h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.events ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: item;
+}
+
+.events li {
+    font-size: 30px;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.prayerletter{
+    background-color: rgba(12, 59, 105, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.prayerletter p{
+    font-weight: bolder;
+    font-size: larger;
+    font-style: italic;
+}
+.prayerletter h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.prayerletter blockquote{
+    font-size: 1.3rem ;
+}
+.info{
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic;
+}
