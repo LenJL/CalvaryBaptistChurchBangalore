@@ -41,5 +41,5 @@ function initSlideshow() {
     showSlide(currentIndex);
 }
 
-setInterval(nextSlide, 10000); 
+setInterval(nextSlide, 5000); 
 window.onload = initSlideshow;
