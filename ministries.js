@@ -43,4 +43,7 @@ function createDots(sliderClass) {
 createSlider("tribal");
 createSlider("children");
 createSlider("church");
+createSlider("rhema");
+
+
  
