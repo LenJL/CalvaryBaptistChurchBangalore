@@ -395,14 +395,15 @@ body {
     font-size: 1.3rem ;
 }
 
+.info{
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic;
+}
+
 .outreach{
     font-size: 28px;
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
-}
-.info{
-    font-size: large;
-    font-weight: bolder;
-    font-style: italic;
 }
