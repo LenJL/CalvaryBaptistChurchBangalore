@@ -394,6 +394,12 @@ body {
 .prayerletter blockquote{
     font-size: 1.3rem ;
 }
+
+.outreach{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
 .info{
     font-size: large;
     font-weight: bolder;
