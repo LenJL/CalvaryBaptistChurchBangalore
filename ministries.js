@@ -16,7 +16,7 @@ function createSlider(sliderClass) {
     }
 
     showSlide(currentIndex);
-    setInterval(nextSlide, 10000);
+    setInterval(nextSlide, 5000);
 
     createDots(sliderClass);
 }
